@@ -1,0 +1,66 @@
+ 
+Ask for number of players
+
+If less than 2 or more than 6{
+	ask question again
+} 
+	
+
+while(counter is less than playerNumber){
+	ask to input a player Name
+	create a player with Name
+}
+
+
+//main game loop
+for(frame counter is less than 10 play a frame){
+	
+	for each player{
+		ask for ball one score
+
+		if(ball one score is a strike(10)){
+			notify player they scored a strike
+			add 10 to frame score
+			make a note to add the score of next two balls
+		}else if (ball one score is less than 10){
+			ask for ball two score
+			if(ball one score + ball two score equals ten){
+				notify player they scored a spare
+				add 10 to frame score
+				make a note to add the score of next ball
+			}
+		}else{
+			ball one score + ball two score
+			add sum to frame score
+		}
+	
+		if(player scored a strike last frame){
+			if(player scored a strike on current frame){
+				add 10 to previous score frame 
+				make note to add ball one score of next frame to previous frame
+			}else{
+				add ball one and ball two score to previous frame
+			}	
+		}
+
+		if(player scored a spare last frame){
+			add ball one score to previous frame
+		}
+
+
+		add and update framescore to total player score 
+
+		if(on 10th frame and player scored a strike){
+			ask player for two more ball scores as bonus
+			add bonus to frame score
+		}
+
+	}
+
+	print current scores
+	add 1 to frame counter
+} 
+
+
+notify players game has ended
+print final scores
