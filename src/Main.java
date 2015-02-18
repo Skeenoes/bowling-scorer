@@ -2,6 +2,7 @@ import classes.Game;
 
 public class Main {
 
+    //just a comment
     public static void main(String [] args){
 
         boolean isGameContinue;
